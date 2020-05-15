@@ -1,0 +1,98 @@
+html {
+	font-family: Lato, sans-serif;
+	font-weight: 300;
+}
+
+body {
+	background: #222 url(bg.png);
+}
+
+
+h1 {
+	font-family: Lato, sans-serif;
+	font-size: 3.1em;
+	color: white;
+	font-weight: 100;
+	margin-bottom: 0px;
+	margin-right: 10px;
+	line-height: 1em;
+	text-align: right;
+}
+
+h1.fade-in {
+	visibility: hidden;
+}
+
+h3 {
+	font-family: Lato, sans-serif;
+	font-size: 1.3em;
+	color: white;
+	font-weight: 300;
+	margin-top:10px;
+	margin-right:10px;
+	margin-bottom: 40px;
+	line-height: 1.4em;
+	text-align: right;
+	visibility: hidden;
+}
+
+/* h3.fade-in {
+	visibility: hidden;
+} */
+
+ul {
+	width: 290px;
+}
+
+li {
+	list-style: none;
+	line-height: 1.6em;
+	text-align: right;
+	visibility: hidden;
+}
+
+li:hover {
+	list-style: disc;
+	color: #ccc;
+}
+
+a {
+	font-size: 1.2em;
+	color: #eee;
+	text-decoration: none;
+}
+
+#main {
+	width: 305px;
+	margin: 40px auto;
+	line-height: 1.5em;
+	padding:10px;
+	-webkit-border-radius:15px;
+}
+
+span {
+	font-family: 'Lato', sans-serif;
+	font-size:2em;
+	color:white;
+}
+
+@media only screen and max-device-width 480px {
+	ul {
+	width: 280px;
+}
+
+h1 {
+	font-size: 2em;
+	color: white;
+	font-weight: 100;
+	margin-bottom: 80px;
+	line-height: 1em;
+}
+
+#main {
+	width: 320px;
+	margin: 10px auto;
+	line-height: 1.5em;
+}
+
+

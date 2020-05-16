@@ -19,30 +19,35 @@ def coding_projects():
     title = "Coding Projects"
     return render_template("projects.html", title=title)
 
-@app.route("/astree")
+@app.route("/projects/astree")
 def astree():
     title = "ASTree"
     return render_template("astree.html", title=title)
 
-@app.route("/actransit")
+@app.route("/projects/actransit")
 def actransit():
     title = "AC Transit"
     return render_template("actransit.html", title=title)
 
-@app.route("/craigslistmining")
+@app.route("/projects/craigslist-mining")
 def cl_mining():
     title = "Craigslist Mining"
     return render_template("craigslistmining.html", title=title)
 
-@app.route("/visuaudio")
+@app.route("/projects/visuaudio")
 def visuaudio():
     title = "Visualize Audio"
     return render_template("visuaudio.html", title=title)
 
-@app.route("/youtube2audio")
+@app.route("/projects/youtube2audio")
 def youtube2audio():
     title = "YouTube to Audio"
     return render_template("youtube2audio.html", title=title)
+
+@app.errorhandler(404)
+def not_found(e):
+    """Page not found."""
+    return render_template("404.html"), 404
 
 
 if __name__ == "__main__":

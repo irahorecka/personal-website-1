@@ -4,7 +4,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Ira Horecka</title>
+    {% if title %}
+      <title>{{ title }}</title>
+    {% else %}
+      <title>Ira Horecka</title>
+    {% endif %}
     <meta name="description" content="Ira Horecka, chilling at home, doing part-time Amazon delivery">
     <meta name="viewport" content="width=device-width">
 
@@ -19,7 +23,13 @@
 
   </header>
   <div id="main" role="main">
-    <h1 class="fade-in">Ira Horecka</h1>
+  
+    {% if title == "Home Page" %}
+      <h1 class="fade-in"><a href="/">Ira Horecka</a></h1>
+    {% else %}
+      <h1><a href="/">Ira Horecka</a></h1>
+    {% endif %}
+
     <script type="text/javascript" src="{{ url_for('static', filename='script.js')  }}"></script>
     {% block content %}{% endblock content %}
   </div>

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <link class="img-fluid rounded-circle float-left mr-2" rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
 </head>
 <body onload="show()">
   <header>
@@ -35,7 +36,7 @@
     {% block content %}{% endblock content %}
 
   <script>
-	$.backstretch("{{ url_for('static', filename='night_sky_min.JPG') }}");
+	$.backstretch("{{ url_for('static', filename='night_sky_min.jpg') }}");
 
     var _gaq=[['_setAccount','UA-249454-1'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

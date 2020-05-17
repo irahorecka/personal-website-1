@@ -4,7 +4,7 @@ html {
 }
 
 body {
-	background: #222 url(bg.png);
+	background: #222 url(bg.jpg);
 }
 
 h1 {
@@ -65,7 +65,9 @@ img.center{
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: auto;
+	margin-bottom: 50px; /* try to make this more relative */
 	width: 100%;
+	border: 2px solid rgb(73,46,71);
 }
 
 li {
@@ -100,6 +102,15 @@ span {
 	color:white;
 }
 
+div.fade-in {
+	visibility: hidden;
+}
+
+.fade-scroll {
+	opacity: 1;
+  }
+  
+
 @media only screen and max-device-width 480px {
 	ul {
 	width: 280px;
@@ -118,3 +129,4 @@ h1 {
 	margin: 10px auto;
 	line-height: 1.5em;
 }
+

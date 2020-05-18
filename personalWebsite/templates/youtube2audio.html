@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h3><a href="/projects">Coding projects</a></h3>
+    <h3 class="fade-in">YouTube Videos to Audio</h3>
+    <div class="fade-in">
+        {% for text in texts %}
+            {% if text == "<img_here>" %}
+                <img class="fade-scroll center round-corner" 
+                src="https://camo.githubusercontent.com/34010e2e2b1fc6befbd09b228e6c30e28854478d/68747470733a2f2f692e696d6775722e636f6d2f47307230626e6e2e706e67"
+                alt="YouTube to Audio GUI">
+            {% else %}
+                <p class="fade-scroll">{{ text }}</p>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock content %}

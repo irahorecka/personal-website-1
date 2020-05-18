@@ -18,10 +18,6 @@ h1 {
 	text-align: right;
 }
 
-h1.fade-in {
-	visibility: hidden;
-}
-
 h3 {
 	font-family: Lato, sans-serif;
 	font-size: 1.3em;
@@ -34,10 +30,6 @@ h3 {
 	text-align: right;
 }
 
-h3.fade-in {
-	visibility: hidden;
-}
-
 p {
 	font-family: Lato, sans-serif;
 	color: white;
@@ -48,16 +40,8 @@ p {
 	text-align: center;
 }
 
-p.fade-in {
-	visibility: hidden;
-}
-
 ul {
 	width: 290px;
-}
-
-img.fade-in {
-	visibility: hidden;
 }
 
 img.center{
@@ -67,6 +51,24 @@ img.center{
 	margin-top: auto;
 	margin-bottom: 50px; /* try to make this more relative */
 	width: 100%;
+}
+
+img.round-corner {
+	border-radius: 5px;
+	border: 2px solid rgb(73,46,71);
+}
+
+video.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: 50px; /* try to make this more relative */
+	width: 100%;
+}
+
+video.round-corner {
+	border-radius: 5px;
 	border: 2px solid rgb(73,46,71);
 }
 
@@ -102,16 +104,16 @@ span {
 	color:white;
 }
 
-div.fade-in {
-	visibility: hidden;
-}
-
 .fade-scroll {
 	opacity: 1;
-  }
+}
+
+.fade-in {
+	visibility: hidden;
+}
   
 
-@media only screen and max-device-width 480px {
+/* @media only screen and max-device-width 480px {
 	ul {
 	width: 280px;
 }
@@ -128,5 +130,5 @@ h1 {
 	width: 320px;
 	margin: 10px auto;
 	line-height: 1.5em;
-}
+} */
 

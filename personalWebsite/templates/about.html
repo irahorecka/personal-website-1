@@ -1,0 +1,16 @@
+
+{% extends "layout.html" %}
+{% block content %}
+    <h3 class="fade-in">About me</h3>
+    <div class="fade-in">
+        {% for text in texts %}
+            {% if text == "<img_here>" %}
+                <img class="fade-scroll center"
+                src="{{ url_for('static', filename='ira_profile.png') }}"
+                alt="Ira Horecka Profile">
+            {% else %}
+                <p class="fade-scroll">{{ text }}</p>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock content %}

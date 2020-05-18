@@ -9,7 +9,7 @@
     {% else %}
       <title>Ira Horecka</title>
     {% endif %}
-    <meta name="description" content="Ira Horecka, chilling at home, doing part-time Amazon delivery">
+    <meta name="description" content="Ira Horecka's website">
     <meta name="viewport" content="width=device-width">
 
     <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
@@ -25,7 +25,7 @@
   </header>
   <div id="main" role="main">
   
-    {% if title == "Home Page" %}
+    {% if title == "Ira Horecka" %}
       <h1 class="fade-in"><a href="/">Ira Horecka</a></h1>
     {% else %}
       <h1><a href="/">Ira Horecka</a></h1>
@@ -36,7 +36,7 @@
     {% block content %}{% endblock content %}
 
   <script>
-	$.backstretch("{{ url_for('static', filename='night_sky_min.jpg') }}");
+	$.backstretch("{{ url_for('static', filename='night_sky_compressed.jpg') }}");
 
     var _gaq=[['_setAccount','UA-249454-1'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

@@ -2,6 +2,7 @@ $(document).ready(function () {
   fadeIn();
 });
 
+
 // Function to handle fade-out of text above when scrolling down
 $(window).on("load",function() {
   function fade(pageLoad) {
@@ -30,9 +31,10 @@ function fadeIn() {
   var title = document.title
   // all p-tags should be wrapped in div tag
   var titleFadeAttribute = {
-    "Home Page": ['h1.fade-in', 'h3.fade-in', 'li'],
+    "Ira Horecka": ['h1.fade-in', 'h3.fade-in', 'li'],
     "About": ['h3.fade-in', 'div.fade-in'],
     "AC Transit": ['h3.fade-in', 'div.fade-in'],
+    "Visualize Audio": ['h3.fade-in', 'div.fade-in'],
     "YouTube to Audio": ['h3.fade-in', 'div.fade-in']
   };
 
@@ -44,7 +46,7 @@ function fadeIn() {
   }
 
   // Don't fade-in h1 if previous pages were from my site
-  if (title === "Home Page") {
+  if (title === "Ira Horecka") {
     if (urlReference.includes('localhost:5000')) {
       $('h1.fade-in').css('visibility','visible');
       htmlTags = ['h3.fade-in', 'li'];
@@ -62,8 +64,6 @@ function fadeIn() {
   var msFadeIn = 800;
   for (tag in htmlTags) {
       $(htmlTags[tag]).css('visibility','visible').hide().delay(msDelay).fadeIn(msFadeIn);
-      if (title != 'Coding Projects') {
-        msDelay += 300;
-      }
+      msDelay += 300;
   }
 }

@@ -1,19 +1,20 @@
-from flask import Flask, render_template, url_for
-
-app = Flask(__name__)
+from pathlib import Path
+from flask import render_template, url_for
+from personalWebsite import app
 
 
 @app.route("/")
 @app.route("/home")
 def home():
-    title = "Home Page"
+    title = "Ira Horecka"
     return render_template("home.html", title=title)
 
 
 @app.route("/about")
 def about():
     title = "About"
-    return render_template("about.html", title=title)
+    text_body = parse_textfile("about.txt")
+    return render_template("about.html", title=title, texts=text_body)
 
 
 @app.route("/bikes")
@@ -37,7 +38,8 @@ def astree():
 @app.route("/projects/actransit")
 def actransit():
     title = "AC Transit"
-    return render_template("actransit.html", title=title)
+    text_body = parse_textfile("actransit.txt")
+    return render_template("actransit.html", title=title, texts=text_body)
 
 
 @app.route("/projects/craigslist-mining")
@@ -49,13 +51,15 @@ def cl_mining():
 @app.route("/projects/visuaudio")
 def visuaudio():
     title = "Visualize Audio"
-    return render_template("visuaudio.html", title=title)
+    text_body = parse_textfile("visuaudio.txt")
+    return render_template("visuaudio.html", title=title, texts=text_body)
 
 
 @app.route("/projects/youtube2audio")
 def youtube2audio():
     title = "YouTube to Audio"
-    return render_template("youtube2audio.html", title=title)
+    text_body = parse_textfile("youtube2audio.txt")
+    return render_template("youtube2audio.html", title=title, texts=text_body)
 
 
 @app.errorhandler(404)
@@ -64,5 +68,10 @@ def not_found(e):
     return render_template("404.html"), 404
 
 
-if __name__ == "__main__":
-    app.run(debug=True)
+def parse_textfile(textfile_name):
+    text_path = Path(__file__).parent / f"./text_body/{textfile_name}"
+    with text_path.open() as text:
+        texts = text.readlines()
+    texts = [text.strip() for text in texts]
+    
+    return texts

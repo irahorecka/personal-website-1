@@ -6,8 +6,8 @@
         {% for text in texts %}
             {% if text == "<img_here>" %}
                 <img class="fade-scroll center"
-                src="{{ url_for('static', filename='ira_profile.png') }}"
-                alt="Ira Horecka Profile">
+                src="{{ url_for('static', filename='img/ira_profile.png') }}"
+                alt="Ira Horecka Profile" />
             {% else %}
                 <p class="fade-scroll">{{ text }}</p>
             {% endif %}

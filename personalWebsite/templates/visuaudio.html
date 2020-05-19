@@ -5,7 +5,7 @@
     <div class="fade-in">
         {% for text in texts %}
             {% if text == "<vid_here>" %}
-                <video class="fade-scroll center round-corner" autoplay>
+                <video class="fade-scroll center round-corner" controls>
                     <source src="{{ url_for('static', filename='visuaudio.mp4') }}" type="video/mp4">
                 Your browser does not support the video tag.
                 </video>

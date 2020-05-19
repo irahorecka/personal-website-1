@@ -4,7 +4,7 @@ html {
 }
 
 body {
-	background: #222 url(bg.jpg);
+	background: #222 url(img/bg.jpg);
 }
 
 h1 {
@@ -111,24 +111,60 @@ span {
 .fade-in {
 	visibility: hidden;
 }
-  
 
-/* @media only screen and max-device-width 480px {
-	ul {
-	width: 280px;
+
+/* for slideshow */
+.container{
+	width:540px;
+	margin:40px auto;
+	overflow:auto;
 }
 
-h1 {
-	font-size: 2em;
-	color: white;
-	font-weight: 100;
-	margin-bottom: 80px;
-	line-height: 1em;
+.slider-inner{
+	width:500px;
+	height:300px;
+	position:relative;
+	overflow:hidden;
+	float:left;
+	padding:3px;
+	border:#666 solid 1px;
 }
 
-#main {
-	width: 320px;
-	margin: 10px auto;
-	line-height: 1.5em;
-} */
+.slider-inner img{
+	display:none;
+	width:500px;
+	height:300px;
+}
 
+.slider-inner img.active{
+	display:inline-block;
+}
+
+.prev,.next{
+	float:left;
+	margin-top:130px;
+	cursor: pointer;
+}
+
+.prev{
+	position:relative;
+	margin-right:-45px;
+	z-index:100;
+}
+
+.next{
+	position:relative;
+	margin-left:-45px;
+	z-index:100;
+}
+
+.fill {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+	background-image: url('img/bg.jpg');
+}
+
+img.fit {
+	object-fit: contain;
+}

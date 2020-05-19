@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 from flask import render_template, url_for
 from personalWebsite import app
@@ -20,7 +21,13 @@ def about():
 @app.route("/bikes")
 def bikes():
     title = "Bike Gallery"
-    return render_template("bikes.html", title=title)
+    img_folder = "super-sport"
+    content = {
+        "bike": "1972 Schwinn Super Sport",
+        "image_folder": img_folder,
+        "images": get_bike_images(img_folder)
+    }
+    return render_template("bikes.html", title=title, content=content)
 
 
 @app.route("/projects")
@@ -73,5 +80,13 @@ def parse_textfile(textfile_name):
     with text_path.open() as text:
         texts = text.readlines()
     texts = [text.strip() for text in texts]
-    
+
     return texts
+
+
+def get_bike_images(bikefolder_name):
+    bike_img_path = Path(__file__).parent / f"./static/bike_img/{bikefolder_name}"
+    bike_imgs = [img for img in os.listdir(bike_img_path)]
+    print(bike_imgs)
+
+    return bike_imgs

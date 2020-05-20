@@ -1,11 +1,11 @@
 {% extends "layout.html"%}
 {% block content %}
     <h3 class="fade-in"><a href="/projects">Coding projects</a></h3>
-    <ul dir="rtl">
-        <li><a href="/projects/youtube2audio" title="Youtube2Audio">YouTube2Audio</a></li>
-        <li><a href="/projects/actransit" title="ACTransitMap">ACTransitMap</a></li>
-        <li><a href="/projects/craigslist-mining" title="CL_Mining">CL_Mining</a></li>
-        <li><a href="/projects/visuaudio" title="visuaudio">visuaudio</a></li>
-        <li><a href="/projects/astree" title="astree">astree</a></li>
-    </ul>
+    <div class="fade-in">
+        <ul dir="rtl">
+        {% for project in content.projects %}
+            <li><a href="{{ url_for('indiv_project', project_id=project.endpoint) }}" title="{{ project.title }}">{{ project.title }}</a></li>
+        {% endfor %}
+        </ul>
+    </div>
 {% endblock content %}

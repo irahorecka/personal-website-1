@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h3><a href="/projects">Coding projects</a></h3>
+    <h3 class="fade-in">{{ content.header }}</h3>
+    <div class="fade-in">
+        {% for text in texts %}
+            {% if text == "<img_here>" %}
+                <img class="fade-scroll center round-corner" 
+                src="{{ content.img }}"
+                alt="{{ content.img_alt }}">
+            {% elif text == "<vid_here>" %}
+                <video class="fade-scroll center round-corner" controls>
+                    <source src="{{ content.vid }}" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            {% else %}
+                <p class="fade-scroll">{{ text }}</p>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock content %}

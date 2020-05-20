@@ -1,0 +1,1 @@
+This is a project that focuses on mining data from Craigslist Housing.

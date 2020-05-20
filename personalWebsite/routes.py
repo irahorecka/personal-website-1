@@ -1,6 +1,7 @@
 import os
+import json
 from pathlib import Path
-from flask import render_template, url_for
+from flask import render_template, request, url_for
 from personalWebsite import app
 
 
@@ -18,61 +19,60 @@ def about():
     return render_template("about.html", title=title, texts=text_body)
 
 
-@app.route("/bikes")
-def bikes():
-    title = "Bike Gallery"
-    img_folder = "super-sport"
-    content = {
-        "bike": "1972 Schwinn Super Sport",
-        "image_folder": img_folder,
-        "images": get_bike_images(img_folder)
-    }
-    return render_template("bikes.html", title=title, content=content)
-
-
 @app.route("/projects")
 def coding_projects():
     title = "Coding Projects"
-    return render_template("projects.html", title=title)
+    content = get_project_json()
+    return render_template("projects.html", title=title, content=content)
 
 
-@app.route("/projects/astree")
-def astree():
-    title = "ASTree"
-    return render_template("astree.html", title=title)
+@app.route("/projects/<project_id>")
+def indiv_project(project_id):
+    current_project = get_current_json_obj("projects", project_id)
+    title = current_project["title"]
+    text_body = parse_textfile(f"projects/{project_id}.txt")
+    return render_template(
+        "project.html", title=title, texts=text_body, content=current_project
+    )
 
 
-@app.route("/projects/actransit")
-def actransit():
-    title = "AC Transit"
-    text_body = parse_textfile("actransit.txt")
-    return render_template("actransit.html", title=title, texts=text_body)
+@app.route("/bikes")
+def bikes():
+    title = "Bike Gallery"
+    content = get_bike_json()
+    return render_template("bikes.html", title=title, content=content)
 
 
-@app.route("/projects/craigslist-mining")
-def cl_mining():
-    title = "Craigslist Mining"
-    return render_template("craigslistmining.html", title=title)
-
-
-@app.route("/projects/visuaudio")
-def visuaudio():
-    title = "Visualize Audio"
-    text_body = parse_textfile("visuaudio.txt")
-    return render_template("visuaudio.html", title=title, texts=text_body)
-
-
-@app.route("/projects/youtube2audio")
-def youtube2audio():
-    title = "YouTube to Audio"
-    text_body = parse_textfile("youtube2audio.txt")
-    return render_template("youtube2audio.html", title=title, texts=text_body)
+@app.route("/bikes/<bike_id>")
+def indiv_bike(bike_id):
+    current_bike = get_current_json_obj("bikes", bike_id)
+    title = f"{current_bike['year']} {current_bike['make']} {current_bike['model']}"
+    text_body = parse_textfile(f"bikes/{bike_id}.txt")
+    return render_template(
+        "bike.html", title=title, texts=text_body, content=current_bike
+    )
 
 
 @app.errorhandler(404)
 def not_found(e):
     """Page not found."""
-    return render_template("404.html"), 404
+    return render_template("error/404.html"), 404
+
+
+def get_current_json_obj(json_key, json_endpoint):
+    keys = {
+        "bikes": get_bike_json()["bikes"],
+        "projects": get_project_json()["projects"],
+    }
+    current_item = keys[json_key]
+    content = None
+    for item in current_item:
+        if item["endpoint"] == json_endpoint:
+            content = item
+    if not content:
+        return render_template("error/404.html"), 404
+
+    return content
 
 
 def parse_textfile(textfile_name):
@@ -84,9 +84,17 @@ def parse_textfile(textfile_name):
     return texts
 
 
-def get_bike_images(bikefolder_name):
-    bike_img_path = Path(__file__).parent / f"./static/bike_img/{bikefolder_name}"
-    bike_imgs = [img for img in os.listdir(bike_img_path)]
-    print(bike_imgs)
+def get_project_json():
+    project_json_path = Path(__file__).parent / f"./static/projects.json"
+    with open(project_json_path) as project_json:
+        data = json.load(project_json)
 
-    return bike_imgs
+    return data
+
+
+def get_bike_json():
+    bike_json_path = Path(__file__).parent / f"./static/bikes.json"
+    with open(bike_json_path) as bike_json:
+        data = json.load(bike_json)
+
+    return data

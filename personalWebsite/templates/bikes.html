@@ -1,20 +1,9 @@
-{% extends "layout.html" %}
+{% extends "layout.html"%}
 {% block content %}
-    <h3 class="fade-in">Bike Gallery</h3>
-    <h3>{{ content.bike }}</h3>
-    <div class="container">
-      <div class="slider-outer">
-        <img src="{{ url_for('static', filename='img/arrow-left.png') }}" class="prev" alt="Prev">
-        <div class="slider-inner fill">
-            {% for image in content.images %}
-                {% if loop.index == 1 %}
-                    <img src="static/bike_img/{{ content.image_folder }}/{{ image }}" class="active fit">
-                {% else %}
-                    <img src="static/bike_img/{{ content.image_folder }}/{{ image }}" class="fit">
-                {% endif %}
-            {% endfor %}
-        </div>
-        <img src="{{ url_for('static', filename='img/arrow-right.png') }}" class="next" alt="Next">
-      </div>
-    </div>
+    <h3 class="fade-in"><a href="/bikes">Bike Gallery</a></h3>
+    <ul dir="rtl">
+    {% for bike in content.bikes %}
+        <li><a href="{{ url_for('indiv_bike', bike_id=bike.endpoint) }}" title="{{ bike.year }} {{ bike.make }} {{ bike.model }}">{{ bike.year }} {{ bike.make }} {{ bike.model }}</a></li>
+    {% endfor %}
+    </ul>
 {% endblock content %}

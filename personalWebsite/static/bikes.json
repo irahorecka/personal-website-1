@@ -1,0 +1,134 @@
+{"bikes": [
+    {
+        "year": 1965,
+        "make": "Mondial",
+        "model": "Campione",
+        "endpoint": "mondial"
+    },
+    {
+        "year": 1968,
+        "make": "Tiger",
+        "model": "",
+        "endpoint": "tiger"
+    },
+    {
+        "year": 1970,
+        "make": "Raleigh",
+        "model": "Sport",
+        "endpoint": "raleigh_sport"
+    },
+    {
+        "year": 1970,
+        "make": "Italvega",
+        "model": "Nuovo Sport",
+        "endpoint": "italvega_nuovo_sport"
+    },
+    {
+        "year": 1972,
+        "make": "Schwinn",
+        "model": "Super Sport",
+        "endpoint": "schwinn_super_sport",
+        "main": "main.jpg",
+        "mid": "mid.jpg",
+        "tail": "tail.jpg"
+    },
+    {
+        "year": 1972,
+        "make": "Raleigh",
+        "model": "International",
+        "endpoint": "raleigh_international_1972"
+    },
+    {
+        "year": 1974,
+        "make": "Raleigh",
+        "model": "International",
+        "endpoint": "raleigh_international_1974"
+    },
+    {
+        "year": 1976,
+        "make": "Dawes",
+        "model": "Galaxy",
+        "endpoint": "dawes_galaxy"
+    },
+    {
+        "year": 1984,
+        "make": "Berma",
+        "model": "Professional",
+        "endpoint": "berma_professional" 
+    },
+    {
+        "year": 1984,
+        "make": "Bertin",
+        "model": "C34",
+        "endpoint": "bertin_c34" 
+    },
+    {
+        "year": 1984,
+        "make": "Motobecane",
+        "model": "Jubilee Sport",
+        "endpoint": "motobecane"
+    },
+    {
+        "year": 1985,
+        "make": "Bianchi",
+        "model": "Stelvio",
+        "endpoint": "bianchi_stelvio" 
+    },
+    {
+        "year": 1985,
+        "make": "Faggin",
+        "model": "Campione del Mondo",
+        "endpoint": "faggin"
+    },
+    {
+        "year": 1986,
+        "make": "Trek",
+        "model": "560",
+        "endpoint": "trek_560",
+        "main": "main.jpg",
+        "mid": "mid.jpg",
+        "tail": "tail.jpg"
+    },
+    {
+        "year": 1986,
+        "make": "Raleigh",
+        "model": "Racing USA",
+        "endpoint": "raleigh_racing_usa" 
+    },
+    {
+        "year": 1986,
+        "make": "Schwinn",
+        "model": "Traveler",
+        "endpoint": "schwinn_traveler"
+    },
+    {
+        "year": 1987,
+        "make": "Schwinn",
+        "model": "Tempo",
+        "endpoint": "schwinn_tempo" 
+    },
+    {
+        "year": 1995,
+        "make": "Ritchey",
+        "model": "Logic",
+        "endpoint": "ritchey",
+        "main": "main.jpg",
+        "mid": "mid.jpg",
+        "tail": "tail.jpg"
+    },
+    {
+        "year": 1998,
+        "make": "VooDoo",
+        "model": "Erzulie",
+        "endpoint": "voodoo"
+    },
+    {
+        "year": 2001,
+        "make": "GT",
+        "model": "Attack",
+        "endpoint": "gt_attack",
+        "main": "main.jpg",
+        "mid": "mid.jpg",
+        "tail": "tail.jpg"
+    }
+]}

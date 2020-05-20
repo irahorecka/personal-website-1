@@ -1,6 +1,5 @@
 $(document).ready(function () {
   fadeIn();
-  slideShow();
 });
 
 
@@ -34,16 +33,21 @@ function fadeIn() {
   var titleFadeAttribute = {
     "Ira Horecka": ['h1.fade-in', 'h3.fade-in', 'li'],
     "About": ['h3.fade-in', 'div.fade-in'],
-    "AC Transit": ['h3.fade-in', 'div.fade-in'],
-    "Visualize Audio": ['h3.fade-in', 'div.fade-in'],
-    "YouTube to Audio": ['h3.fade-in', 'div.fade-in']
+    "Coding Projects": ['h3.fade-in', 'li'],
+    "Bike Gallery": ['h3.fade-in', 'li'],
+    "projects": ['h3.fade-in', 'div.fade-in'],
+    "bikes": ['h3.fade-in', 'div.fade-in']
   };
 
   // set default fade in attributes if none of special pages selected
   if (title in titleFadeAttribute) {
     htmlTags = titleFadeAttribute[title];
+  } else if (urlCurrent.includes('projects')) {
+    htmlTags = titleFadeAttribute["projects"];
+  } else if (urlCurrent.includes('bikes')) {
+    htmlTags = titleFadeAttribute["bikes"];
   } else {
-    htmlTags = ['h3.fade-in', 'li'];
+    htmlTags = [];
   }
 
   // Don't fade-in h1 if previous pages were from my site
@@ -57,7 +61,13 @@ function fadeIn() {
   // Don't fade in h3 if previous pages were attributed with /projects/ 
   if (urlReference.includes('/projects/') && urlCurrent.includes('/projects')) {
     $('h3.fade-in').css('visibility','visible');
-    htmlTags = htmlTags.slice(1,)
+    htmlTags = htmlTags.slice(1,);
+  } 
+
+  // Don't fade in h3 if previous pages were attributed with /bikes/ 
+  if (urlReference.includes('/bikes/') && urlCurrent.includes('/bikes')) {
+    $('h3.fade-in').css('visibility','visible');
+    htmlTags = htmlTags.slice(1,);
   } 
 
   // Allow fade-in with delay
@@ -69,25 +79,3 @@ function fadeIn() {
   }
 }
 
-
-function slideShow() {
-  $('.next').on('click', function(){
-    var currentImg = $('.active');
-    var nextImg = currentImg.next();
-
-    if(nextImg.length){
-      currentImg.removeClass('active').css('z-index', -10);
-      nextImg.addClass('active').css('z-index', 10);
-    }
-  });
-
-  $('.prev').on('click', function(){
-    var currentImg = $('.active');
-    var prevImg = currentImg.prev();
-
-    if(prevImg.length){
-      currentImg.removeClass('active').css('z-index', -10);
-      prevImg.addClass('active').css('z-index', 10);
-    }
-  });
-}

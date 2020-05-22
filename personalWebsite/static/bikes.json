@@ -8,53 +8,109 @@
     {
         "year": 1968,
         "make": "Tiger",
-        "model": "",
-        "endpoint": "tiger"
+        "model": "Super Model Deluxe",
+        "endpoint": "tiger",
+        "<img_1>": "main.jpg",
+        "<img_2>": "mid.jpg",
+        "<img_3>": "tail.jpg",
+        "<img_4>": "img_4.jpg",
+        "<img_5>": "img_5.jpg"
     },
     {
         "year": 1970,
         "make": "Raleigh",
         "model": "Sport",
-        "endpoint": "raleigh_sport"
+        "endpoint": "raleigh_sport",
+        "<img_1>": "img_1.jpg",
+        "<img_2>": "img_2.jpg",
+        "<img_3>": "img_3.jpg",
+        "<img_4>": "img_4.jpg",
+        "<img_5>": "img_5.jpg"
     },
     {
         "year": 1970,
         "make": "Italvega",
         "model": "Nuovo Sport",
-        "endpoint": "italvega_nuovo_sport"
+        "endpoint": "italvega_nuovo"
+    },
+    {
+        "year": 1976,
+        "make": "Italvega",
+        "model": "Viva Sport",
+        "endpoint": "italvega_viva_1",
+        "<img_1>": "img_1.jpg",
+        "<img_2>": "img_2.jpg",
+        "<img_3>": "img_3.jpg",
+        "<img_4>": "img_4.jpg"
+    },
+
+    {
+        "year": 1972,
+        "make": "Italvega",
+        "model": "Viva Sport",
+        "endpoint": "italvega_viva_2",
+        "<img_1>": "img_1.jpg",
+        "<img_2>": "img_2.jpg",
+        "<img_3>": "img_3.jpg",
+        "<img_4>": "img_4.jpg",
+        "<img_5>": "img_5.jpg"
     },
     {
         "year": 1972,
         "make": "Schwinn",
         "model": "Super Sport",
         "endpoint": "schwinn_super_sport",
-        "main": "main.jpg",
-        "mid": "mid.jpg",
-        "tail": "tail.jpg"
+        "<img_1>": "main.jpg",
+        "<img_2>": "mid.jpg",
+        "<img_3>": "tail.jpg",
+        "<img_4>": "catalog.jpg"
     },
     {
-        "year": 1972,
+        "year": 1971,
         "make": "Raleigh",
         "model": "International",
-        "endpoint": "raleigh_international_1972"
+        "endpoint": "raleigh_intl_71",
+        "<img_1>": "img_1.jpg",
+        "<img_2>": "img_2.jpg",
+        "<img_3>": "img_3.jpg",
+        "<img_4>": "img_4.jpg",
+        "<img_5>": "img_5.jpg",
+        "<img_6>": "img_6.jpg"
     },
     {
         "year": 1974,
         "make": "Raleigh",
         "model": "International",
-        "endpoint": "raleigh_international_1974"
+        "endpoint": "raleigh_intl_74",
+        "<img_1>": "img_1.jpg",
+        "<img_2>": "img_2.jpg",
+        "<img_3>": "img_3.jpg",
+        "<img_4>": "img_4.jpg",
+        "<img_5>": "img_5.jpg",
+        "<img_6>": "img_6.jpg"
     },
     {
         "year": 1976,
         "make": "Dawes",
         "model": "Galaxy",
-        "endpoint": "dawes_galaxy"
+        "endpoint": "dawes",
+        "<img_1>": "img_1.jpg",
+        "<img_2>": "img_2.jpg",
+        "<img_3>": "img_3.jpg",
+        "<img_4>": "img_4.jpg",
+        "<img_5>": "img_5.jpg"
     },
     {
         "year": 1984,
         "make": "Berma",
         "model": "Professional",
-        "endpoint": "berma_professional" 
+        "endpoint": "berma",
+        "<img_1>": "img_6.jpg",
+        "<img_2>": "img_1.jpg",
+        "<img_3>": "img_2.jpg",
+        "<img_4>": "img_3.jpg",
+        "<img_5>": "img_4.jpg",
+        "<img_6>": "img_5.jpg"
     },
     {
         "year": 1984,
@@ -66,28 +122,44 @@
         "year": 1984,
         "make": "Motobecane",
         "model": "Jubilee Sport",
-        "endpoint": "motobecane"
+        "endpoint": "motobecane",
+        "<img_1>": "main.jpg",
+        "<img_2>": "mid.jpg",
+        "<img_3>": "tail.jpg",
+        "<img_4>": "catalog.jpg",
+        "<img_5>": "img_2.jpg",
+        "<img_6>": "img_3.jpg"
     },
     {
         "year": 1985,
         "make": "Bianchi",
         "model": "Stelvio",
-        "endpoint": "bianchi_stelvio" 
+        "endpoint": "bianchi",
+        "<img_1>": "img_1.jpg",
+        "<img_2>": "img_2.jpg",
+        "<img_3>": "img_3.jpg",
+        "<img_4>": "img_4.jpg",
+        "<img_5>": "img_5.jpg",
+        "<img_6>": "img_6.jpg"
     },
     {
         "year": 1985,
         "make": "Faggin",
-        "model": "Campione del Mondo",
-        "endpoint": "faggin"
+        "model": "Campione d. Mondo",
+        "endpoint": "faggin",
+        "<img_1>": "faggin.jpg"
     },
     {
         "year": 1986,
         "make": "Trek",
         "model": "560",
-        "endpoint": "trek_560",
-        "main": "main.jpg",
-        "mid": "mid.jpg",
-        "tail": "tail.jpg"
+        "endpoint": "trek",
+        "<img_1>": "main.jpg",
+        "<img_2>": "mid.jpg",
+        "<img_3>": "tail.jpg",
+        "<img_4>": "img_4.jpg",
+        "<img_5>": "img_5.jpg",
+        "<img_6>": "catalog.jpg"
     },
     {
         "year": 1986,
@@ -99,36 +171,53 @@
         "year": 1986,
         "make": "Schwinn",
         "model": "Traveler",
-        "endpoint": "schwinn_traveler"
+        "endpoint": "schwinn_traveler",
+        "<img_1>": "img_1.jpg",
+        "<img_2>": "img_2.jpg",
+        "<img_3>": "img_3.jpg",
+        "<img_4>": "img_4.jpg",
+        "<img_5>": "img_5.jpg",
+        "<img_6>": "img_6.jpg"
     },
     {
         "year": 1987,
         "make": "Schwinn",
         "model": "Tempo",
-        "endpoint": "schwinn_tempo" 
+        "endpoint": "schwinn_tempo",
+        "<img_1>": "main.jpg",
+        "<img_2>": "mid.jpg",
+        "<img_3>": "tail.jpg",
+        "<img_4>": "img_4.jpg",
+        "<img_5>": "img_5.jpg",
+        "<img_6>": "catalog.jpg"
     },
     {
         "year": 1995,
         "make": "Ritchey",
         "model": "Logic",
         "endpoint": "ritchey",
-        "main": "main.jpg",
-        "mid": "mid.jpg",
-        "tail": "tail.jpg"
+        "<img_1>": "main.jpg",
+        "<img_2>": "mid.jpg",
+        "<img_3>": "img_rear.jpg",
+        "<img_4>": "tail.jpg",
+        "<img_5>": "img_bb.jpg",
+        "<img_6>": "ad.jpg"
     },
     {
         "year": 1998,
         "make": "VooDoo",
         "model": "Erzulie",
-        "endpoint": "voodoo"
+        "endpoint": "voodoo",
+        "<img_1>": "img_1.jpg",
+        "<img_2>": "ad.jpg"
     },
     {
         "year": 2001,
         "make": "GT",
         "model": "Attack",
-        "endpoint": "gt_attack",
-        "main": "main.jpg",
-        "mid": "mid.jpg",
-        "tail": "tail.jpg"
+        "endpoint": "gt",
+        "<img_1>": "main.jpg",
+        "<img_2>": "mid.jpg",
+        "<img_3>": "tail.jpg"
     }
 ]}

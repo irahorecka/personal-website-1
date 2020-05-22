@@ -16,6 +16,7 @@ def home():
 def about():
     title = "About"
     text_body = parse_textfile("about.txt")
+
     return render_template("about.html", title=title, texts=text_body)
 
 
@@ -23,6 +24,7 @@ def about():
 def coding_projects():
     title = "Coding Projects"
     content = get_project_json()
+
     return render_template("projects.html", title=title, content=content)
 
 
@@ -31,6 +33,7 @@ def indiv_project(project_id):
     current_project = get_current_json_obj("projects", project_id)
     title = current_project["title"]
     text_body = parse_textfile(f"projects/{project_id}.txt")
+
     return render_template(
         "project.html", title=title, texts=text_body, content=current_project
     )
@@ -40,6 +43,11 @@ def indiv_project(project_id):
 def bikes():
     title = "Bike Gallery"
     content = get_bike_json()
+    bikes = content["bikes"]
+    # sort bike gallery content by text length
+    content["bikes"] = sorted(
+        bikes, key=lambda x: len(str(x["year"]) + x["make"] + x["model"]), reverse=True
+    )
     return render_template("bikes.html", title=title, content=content)
 
 
@@ -48,8 +56,15 @@ def indiv_bike(bike_id):
     current_bike = get_current_json_obj("bikes", bike_id)
     title = f"{current_bike['year']} {current_bike['make']} {current_bike['model']}"
     text_body = parse_textfile(f"bikes/{bike_id}.txt")
+    # allow six images for every individual bike page.
+    img_keys = ["<img_1>", "<img_2>", "<img_3>", "<img_4>", "<img_5>", "<img_6>"]
+
     return render_template(
-        "bike.html", title=title, texts=text_body, content=current_bike
+        "bike.html",
+        title=title,
+        texts=text_body,
+        content=current_bike,
+        img_keys=img_keys,
     )
 
 

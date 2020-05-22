@@ -4,28 +4,12 @@
     <h3 class="fade-in">{{ content.year }} {{ content.make }} {{ content.model }}</h3>
     <div class="fade-in">
         {% for text in texts %}
-            {% if text == "<img_main>" %}
+            {% if text in img_keys %}
                 <div class="container">
-                <input type="checkbox" id="zoomCheckMain">
-                <label for="zoomCheckMain">
-                    <img class="fade-scroll center round-corner" 
-                    src="/static/bike_img/{{ content.endpoint }}/{{ content.main }}" />
-                </label>
-                </div>
-            {% elif text == "<img_mid>" %}
-                <div class="container">
-                <input type="checkbox" id="zoomCheckMid">
-                <label for="zoomCheckMid">
-                    <img class="fade-scroll center round-corner" 
-                    src="/static/bike_img/{{ content.endpoint }}/{{ content.mid }}" />
-                </label>
-                </div>
-            {% elif text == "<img_tail>" %}
-                <div class="container">
-                <input type="checkbox" id="zoomCheckTail">
-                <label for="zoomCheckTail">
-                    <img class="fade-scroll center round-corner" 
-                    src="/static/bike_img/{{ content.endpoint }}/{{ content.tail }}" />
+                <input type="checkbox" id="zoomCheck{{ loop.index }}">
+                <label for="zoomCheck{{ loop.index }}">
+                    <img class="center round-corner" 
+                    src="/static/bike_img/{{ content.endpoint }}/{{ content.get(text) }}" />
                 </label>
                 </div>
             {% else %}

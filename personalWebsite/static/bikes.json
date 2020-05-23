@@ -180,6 +180,17 @@
         "<img_6>": "img_6.jpg"
     },
     {
+        "year": 1982,
+        "make": "Sears",
+        "model": "Free Spirit",
+        "endpoint": "sears",
+        "<img_1>": "img_1.jpg",
+        "<img_2>": "img_2.jpg",
+        "<img_3>": "img_3.jpg",
+        "<img_4>": "img_4.jpg",
+        "<img_5>": "img_5.jpg"
+    },
+    {
         "year": 1987,
         "make": "Schwinn",
         "model": "Tempo",

@@ -10,7 +10,9 @@
                     src="/static/bike_img/{{ content.endpoint }}/{{ content.get(text) }}" />
                 </div>
             {% else %}
+            {% autoescape off %}
                 <p class="fade-scroll">{{ text }}</p>
+            {% endautoescape %}
             {% endif %}
         {% endfor %}
     </div>

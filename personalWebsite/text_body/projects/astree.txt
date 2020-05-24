@@ -1,1 +1,4 @@
-This is a page for viewing astree, a project that creates a chart for the python abstract syntax tree.
+This project combines the Python <a href="https://docs.python.org/3.8/library/ast.html" target="_blank">ast</a> module with <a href="https://github.com/pydot/pydot-ng" target="_blank">pydot_ng</a> to draw abstract syntax trees specified in DOT language scripts. An abstract syntax tree is a tree representation of the abstract syntactic structure of source code written in a programming language (e.g. Python).
+<img_here>
+When running this application, input modules, methods, declarations, statements, expressions, etc. to view its abstract syntax tree. The image above visualizes the requests.get method.
+View a video example <a href="https://i.imgur.com/C43Mn6p.mp4" target="_blank">here</a>.

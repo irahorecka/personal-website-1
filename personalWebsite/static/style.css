@@ -112,17 +112,13 @@ span {
 	visibility: hidden;
 }
 
-input[type=checkbox] {
-display: none;
-}
-
 .container img {
-width: 100%;
-transition: transform 0.25s ease;
-cursor: zoom-in;
+	width: 100%;
+	transition: transform 0.25s ease;
+	cursor: zoom-in;
 }
 
-input[type=checkbox]:checked ~ label > img {
-transform: scale(2.5);
-cursor: zoom-out;
+.container.zoomin img {
+	transform: scale(2.5);
+	cursor: zoom-out;
 }

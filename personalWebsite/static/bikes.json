@@ -3,7 +3,8 @@
         "year": 1965,
         "make": "Mondial",
         "model": "Campione",
-        "endpoint": "mondial"
+        "endpoint": "mondial",
+        "<img_1>": "img_1.jpg"
     },
     {
         "year": 1968,
@@ -25,27 +26,35 @@
         "<img_2>": "img_2.jpg",
         "<img_3>": "img_3.jpg",
         "<img_4>": "img_4.jpg",
-        "<img_5>": "img_5.jpg"
+        "<img_5>": "img_5.jpg",
+        "<img_6>":"catalog.jpg"
     },
     {
-        "year": 1970,
+        "year": 1972,
         "make": "Italvega",
         "model": "Nuovo Sport",
-        "endpoint": "italvega_nuovo"
+        "endpoint": "italvega_nuovo",
+        "<img_1>": "img_1.jpg",
+        "<img_2>": "img_2.jpg",
+        "<img_3>": "img_3.jpg",
+        "<img_4>": "img_4.jpg",
+        "<img_5>": "img_5.jpg",
+        "<img_6>": "catalog.jpg"
     },
     {
-        "year": 1976,
+        "year": 1973,
         "make": "Italvega",
         "model": "Viva Sport",
         "endpoint": "italvega_viva_1",
         "<img_1>": "img_1.jpg",
         "<img_2>": "img_2.jpg",
         "<img_3>": "img_3.jpg",
-        "<img_4>": "img_4.jpg"
+        "<img_4>": "img_4.jpg",
+        "<img_5>": "catalog.jpg"
     },
 
     {
-        "year": 1972,
+        "year": 1971,
         "make": "Italvega",
         "model": "Viva Sport",
         "endpoint": "italvega_viva_2",
@@ -53,7 +62,8 @@
         "<img_2>": "img_2.jpg",
         "<img_3>": "img_3.jpg",
         "<img_4>": "img_4.jpg",
-        "<img_5>": "img_5.jpg"
+        "<img_5>": "img_5.jpg",
+        "<img_6>": "catalog.jpg"
     },
     {
         "year": 1972,
@@ -75,7 +85,7 @@
         "<img_3>": "img_3.jpg",
         "<img_4>": "img_4.jpg",
         "<img_5>": "img_5.jpg",
-        "<img_6>": "img_6.jpg"
+        "<img_6>": "catalog.jpg"
     },
     {
         "year": 1974,
@@ -98,7 +108,8 @@
         "<img_2>": "img_2.jpg",
         "<img_3>": "img_3.jpg",
         "<img_4>": "img_4.jpg",
-        "<img_5>": "img_5.jpg"
+        "<img_5>": "img_5.jpg",
+        "<img_6>": "catalog.jpg"
     },
     {
         "year": 1984,
@@ -113,10 +124,16 @@
         "<img_6>": "img_5.jpg"
     },
     {
-        "year": 1984,
+        "year": 1975,
         "make": "Bertin",
         "model": "C34",
-        "endpoint": "bertin_c34" 
+        "endpoint": "bertin",
+        "<img_1>": "img_1.jpg",
+        "<img_2>": "img_2.jpg",
+        "<img_3>": "img_3.jpg",
+        "<img_4>": "img_4.jpg",
+        "<img_5>": "img_5.jpg",
+        "<img_6>": "catalog.jpg"
     },
     {
         "year": 1984,
@@ -162,10 +179,15 @@
         "<img_6>": "catalog.jpg"
     },
     {
-        "year": 1986,
+        "year": 1985,
         "make": "Raleigh",
         "model": "Racing USA",
-        "endpoint": "raleigh_racing_usa" 
+        "endpoint": "raleigh_racing_usa",
+        "<img_1>": "img_1.jpg",
+        "<img_2>": "img_2.jpg",
+        "<img_3>": "img_3.jpg",
+        "<img_4>": "img_4.jpg",
+        "<img_5>": "img_5.jpg"
     },
     {
         "year": 1986,

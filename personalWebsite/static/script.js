@@ -1,5 +1,6 @@
 $(document).ready(function () {
   fadeIn();
+  zoomInOut();
 });
 
 
@@ -77,5 +78,13 @@ function fadeIn() {
       $(htmlTags[tag]).css('visibility','visible').hide().delay(msDelay).fadeIn(msFadeIn);
       msDelay += 300;
   }
-}
+};
 
+
+function zoomInOut() {
+  jQuery("img").on("click", function() {
+    let parent = jQuery(this).parent();
+    parent.toggleClass("zoomin", !parent.hasClass("zoomin"));
+    parent.siblings().removeClass("zoomin");
+  });
+};

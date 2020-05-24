@@ -6,11 +6,8 @@
         {% for text in texts %}
             {% if text in img_keys %}
                 <div class="container">
-                <input type="checkbox" id="zoomCheck{{ loop.index }}">
-                <label for="zoomCheck{{ loop.index }}">
                     <img class="center round-corner" 
                     src="/static/bike_img/{{ content.endpoint }}/{{ content.get(text) }}" />
-                </label>
                 </div>
             {% else %}
                 <p class="fade-scroll">{{ text }}</p>

@@ -190,16 +190,16 @@
         "<img_5>": "img_5.jpg"
     },
     {
-        "year": 1986,
+        "year": 1983,
         "make": "Schwinn",
         "model": "Traveler",
         "endpoint": "schwinn_traveler",
         "<img_1>": "img_1.jpg",
         "<img_2>": "img_2.jpg",
-        "<img_3>": "img_3.jpg",
-        "<img_4>": "img_4.jpg",
-        "<img_5>": "img_5.jpg",
-        "<img_6>": "img_6.jpg"
+        "<img_3>": "img_4.jpg",
+        "<img_4>": "img_5.jpg",
+        "<img_5>": "img_6.jpg",
+        "<img_6>": "catalog.jpg"
     },
     {
         "year": 1982,

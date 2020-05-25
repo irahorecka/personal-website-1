@@ -1,3 +1,5 @@
+"""Python module to compress jpg files in personalWebsite/static/bike_img"""
+
 import os
 from PIL import Image
 
@@ -24,7 +26,7 @@ def main():
                 current_img = Image.open(img)
                 if current_img.mode in ("RGBA", "P"):
                     current_img = current_img.convert("RGB")
-                current_img.save(img, optimize=True, quality=60)
+                current_img.save(img, optimize=True, quality=40)  # change quality here
      
         os.chdir(BIKE_IMG_DIR)
 

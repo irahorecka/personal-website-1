@@ -2,4 +2,5 @@
 I like to refurbish vintage bicycles and I like to code. I strive for excellence in my work and I seek meaningful interactions.
 I graduated from UC Santa Cruz with a BS in Biochemistry and Molecular Biology. I have three years of biotechnology experience with nearly two years of programming experience.
 I am self-taught in R, Python, and web programming (HTML5, CSS, JS).
-On top of this, I enjoy working on random hobbies and bicycles! Please reach out to me if you have any bicycle-related questions or would like suggestions on your next bike purchase!
+On top of this, I enjoy working on other side projects and hobbies. Please reach out to me if you have any bicycle-related questions or would like suggestions on your next bike purchase!
+The background image was kindly provided by Gene Horecka. Follow his work on <a href="https://www.instagram.com/genefever/" target="_blank">instagram</a> and check out his <a href="https://www.genefever.com/" target="_blank">online shop</a>.

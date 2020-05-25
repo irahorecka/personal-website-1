@@ -4,7 +4,7 @@
         "github": "https://github.com/irahorecka/YouTube2Audio",
         "endpoint": "youtube2audio",
         "header": "YouTube Videos to Audio",
-        "img": "https://camo.githubusercontent.com/34010e2e2b1fc6befbd09b228e6c30e28854478d/68747470733a2f2f692e696d6775722e636f6d2f47307230626e6e2e706e67",
+        "img": "/static/project_img/youtube2audio.jpg",
         "img_alt": "YouTube to Audio GUI"
     },
     {
@@ -12,28 +12,30 @@
         "github": "https://github.com/irahorecka/ACTransitMap",
         "endpoint": "actransit",
         "header": "Visualize AC Transit buses",
-        "img": "https://camo.githubusercontent.com/a3966b65fb4439833e4fdd8b0fc0d5e37e6f7f29/68747470733a2f2f692e696d6775722e636f6d2f644c56515264312e676966",
+        "img": "/static/project_img/actransit.gif",
         "img_alt": "AC Transit Berkeley/Oakland"
     },
     {
         "title": "CL_Mining",
         "github": "https://github.com/irahorecka/CL_Mining",
         "endpoint": "cl_mining",
-        "header": "Mine Craigslist Housing"
+        "header": "Mine Craigslist Housing",
+        "img": "/static/project_img/cl_mining.jpg",
+        "img_alt": "Mining Craigslist Housing"
     },
     {
         "title": "visuaudio",
         "github": "https://github.com/irahorecka/visuaudio",
         "endpoint": "visuaudio",
         "header": "Visualize Audio",
-        "vid": "/static/img/visuaudio.mp4"
+        "vid": "/static/project_img/visuaudio.mp4"
     },
     {
         "title": "astree",
         "github": "https://github.com/irahorecka/astree",
         "endpoint": "astree",
         "header": "Draw Abstract Syntax Trees",
-        "img": "https://camo.githubusercontent.com/7599664209c510c52d19bedd694c7a0d9886e5f0/68747470733a2f2f692e696d6775722e636f6d2f343146634177672e706e67",
+        "img": "/static/project_img/astree.jpg",
         "img_alt": "Abstract Syntax Trees"
     }
 ]}

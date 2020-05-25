@@ -9,7 +9,7 @@
                 src="{{ url_for('static', filename='img/ira_profile.png') }}"
                 alt="Ira Horecka Profile" />
             {% else %}
-                <p class="fade-scroll">{{ text }}</p>
+                <p class="fade-scroll">{{ text|safe }}</p>
             {% endif %}
         {% endfor %}
     </div>

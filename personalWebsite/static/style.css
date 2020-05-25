@@ -44,6 +44,10 @@ ul {
 	width: 290px;
 }
 
+img {
+	image-rendering: crisp-edges;
+}
+
 img.center{
 	display: block;
 	margin-left: auto;
@@ -121,4 +125,17 @@ span {
 .container.zoomin img {
 	transform: scale(2.5);
 	cursor: zoom-out;
+}
+
+@media only screen and (max-width: 767px) {
+	.container img {
+		width: 100%;
+		transition: none;
+		cursor: none;
+	}
+	
+	.container.zoomin img {
+		transform: none;
+		cursor: none;
+	}
 }

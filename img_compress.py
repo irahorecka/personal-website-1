@@ -1,7 +1,7 @@
 """Python module to compress jpg files in personalWebsite/static/bike_img"""
 
 import os
-from PIL import Image
+from PIL import Image, UnidentifiedImageError
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 BIKE_IMG_DIR = os.path.join(BASE_DIR, "personalWebsite/static/bike_img")
@@ -23,7 +23,11 @@ def main():
                     continue
 
                 print(item, img)
-                current_img = Image.open(img)
+                try:
+                    current_img = Image.open(img)
+                except UnidentifiedImageError:
+                    continue
+                
                 if current_img.mode in ("RGBA", "P"):
                     current_img = current_img.convert("RGB")
                 current_img.save(img, optimize=True, quality=40)  # change quality here

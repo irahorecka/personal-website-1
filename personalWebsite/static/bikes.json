@@ -30,6 +30,29 @@
         "<img_6>":"catalog.jpg"
     },
     {
+        "year": 1976,
+        "make": "Columbia",
+        "model": "Sport",
+        "endpoint": "columbia",
+        "<img_1>": "img_1.jpg",
+        "<img_2>": "img_2.jpg",
+        "<img_3>": "img_3.jpg",
+        "<img_4>": "img_4.jpg",
+        "<img_5>": "img_5.jpg"
+    },
+    {
+        "year": 1967,
+        "make": "Schwinn",
+        "model": "Breeze",
+        "endpoint": "schwinn_breeze",
+        "<img_1>": "img_1.jpg",
+        "<img_2>": "img_2.jpg",
+        "<img_3>": "img_3.jpg",
+        "<img_4>": "img_4.jpg",
+        "<img_5>": "img_5.jpg",
+        "<img_6>":"catalog.jpg"
+    },
+    {
         "year": 1972,
         "make": "Italvega",
         "model": "Nuovo Sport",

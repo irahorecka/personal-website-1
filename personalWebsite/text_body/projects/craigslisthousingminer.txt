@@ -1,0 +1,4 @@
+This is a project that is focused on mining up to every Craiglist Housing post from around the world.
+<img_here>
+The script uses the concurrent.futures module to download Craigslist Housing posts in parallel. The results include title, price, location, and date posted, to name a few.
+If specified, geotags (latitude, longitude) of every post can be included. This project would be useful for training a machine learning model on housing price relative to location or season.

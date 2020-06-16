@@ -53,7 +53,7 @@ function fadeIn() {
 
   // Don't fade-in h1 if previous pages were from my site
   if (title === "Ira Horecka") {
-    if (urlReference.includes('localhost:5000')) {
+    if (urlReference.includes('irahorecka')) {
       $('h1.fade-in').css('visibility','visible');
       htmlTags = ['h3.fade-in', 'li'];
     }

@@ -24,6 +24,10 @@ def about():
 def coding_projects():
     title = "Coding Projects"
     content = get_project_json()
+    projects = content["projects"]
+    content["projects"] = sorted(
+        projects, key=lambda x: len(str(x["title"])), reverse=True
+    )
 
     return render_template("projects.html", title=title, content=content)
 

@@ -16,11 +16,11 @@
         "img_alt": "AC Transit Berkeley/Oakland"
     },
     {
-        "title": "CL_Mining",
-        "github": "https://github.com/irahorecka/CL_Mining",
-        "endpoint": "cl_mining",
+        "title": "craigslistHousingMiner",
+        "github": "https://github.com/irahorecka/craigslistHousingMiner",
+        "endpoint": "craigslisthousingminer",
         "header": "Mine Craigslist Housing",
-        "img": "/static/project_img/cl_mining.jpg",
+        "img": "/static/project_img/craigslisthousingminer.jpg",
         "img_alt": "Mining Craigslist Housing"
     },
     {

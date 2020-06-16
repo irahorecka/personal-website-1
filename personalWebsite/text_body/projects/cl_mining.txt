@@ -1,4 +1,0 @@
-This is a project that focuses on mining Craiglist Housing posts, globally.
-<img_here>
-The script used the multiprocessing library to leverage multiple cores to download Craigslist Housing posts in parallel. The results include title, price, location, and date posted, to name a few.
-If specified, geotags (latitude, longitude) of every post can be included. This project would be useful if machine learning housing patterns is of interest.

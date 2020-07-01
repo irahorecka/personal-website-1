@@ -274,6 +274,9 @@
         "endpoint": "gt",
         "<img_1>": "main.jpg",
         "<img_2>": "mid.jpg",
-        "<img_3>": "tail.jpg"
+        "<img_3>": "tail.jpg",
+        "<img_4>": "img_4.jpg",
+        "<img_5>": "img_5.jpg",
+        "<img_6>": "img_6.jpg"
     }
 ]}
